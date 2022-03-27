@@ -1,0 +1,64 @@
+.div1-class{
+     background-color: red;
+     width: 50px;
+     height: 50px;
+     border: 2px solid green;
+     margin-top: 100px;
+}
+.div2-class{
+     background-color: black;
+     height: 25vw;
+     width: 25vw;
+     border: 10px dashed red;
+     margin-top: 100px;
+     margin-left: 100px;
+}
+
+/* exercicio 2 */
+
+.div3-class{
+     background-color: rgb(180, 74, 177);
+     height: 250px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+.div4-class{
+     background-color: rgb(219, 72, 121);
+     height: 250px;
+     width: 250px;
+     border: 20px dotted red;
+}
+.div5-class{
+     background-color: aquamarine;
+     height: 220%;
+     width: 75%;
+}
+/* Exercício 03 */
+.div6-class{
+     background-color: white;
+     height: 500px;
+     width: 250vw;
+     border: 10px dotted black;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.div7-class{
+     background-color: yellow;
+     height: 50px;
+     width: 75px;
+}
+.div8-class{
+     background-color: rgb(228, 153, 13);
+     height: 100px;
+     width: 75px;
+}
+.div9-class{
+     background-color: rgb(7, 212, 7);
+     color: white;
+     font-size: 30px;
+     padding: 50px;
+     margin-left: 50px;
+     margin-top: 50px;
+}

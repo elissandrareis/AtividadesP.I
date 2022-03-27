@@ -1,0 +1,28 @@
+
+    .divA-class{
+        background-color: purple; 
+        width: 300px;
+        height: 300px;
+    }
+    .divB-class{
+        background-color: yellow;
+        width: 400px;
+        height: 400px;
+    }
+    .p-class{
+       color: black;
+       background-color: blue;
+       font-size: 40px;
+       font-family: fantasy;
+       font-weight: lighter;
+    }
+    .divD-class{
+        width: 200px ;
+        height: 40vh;
+        background-color: cyan;
+    }
+    .divE-class{
+        width:70vh ;
+        height: 20vh;
+        background-color: royalblue;
+    }
