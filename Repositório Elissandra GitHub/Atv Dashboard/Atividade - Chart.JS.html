@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - Chart.JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body style="display:flex">
+
+    <div>
+        <canvas id="myChart_linha" style="position:relative; height: 40vh; width: 40vw"></canvas>
+    </div>
+
+    <div>
+        <canvas id="myChart_barra" style="position:relative; height: 40vh; width: 40vw"></canvas>
+    </div>
+    
+
+</body>
+<script>
+    const labels_linha = [
+        '12:00',
+        '13:00',
+        '14:00',
+        '15:00',
+        '16:00',
+        '17:00',
+    ];
+
+    
+    const data_linha ={
+        labels: labels_linha,
+        datasets: [{
+            label: 'Temperatura',
+            backgroundColor: 'rgb(255, 0, 0)',
+            borderColor: 'rgb(255, 0, 0)',
+            data: [30, 29, 28, 25, 22, 23],
+        },
+        {
+            
+            label: 'Umidade',
+            backgroundColor: 'rgb(0, 0, 255)',
+            borderColor: 'rgb(0, 0, 255)',
+            data: [80, 82, 80, 85, 80, 83]
+        }
+       
+    ]
+    };
+
+  
+    const config_linha = {
+        type: 'line',
+        data: data_linha,
+        options: {}
+};
+
+
+// FIM DO GRÁFICO DE LINHA
+// COMEÇO GRAFICO DE BARRAS
+
+const labels_barra = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+    ];
+
+    
+    const data_barra ={
+        labels: labels_barra,
+        datasets: [{
+            label: 'Temperatura média',
+            backgroundColor: 'rgb(255, 0, 0)',
+            borderColor: 'rgb(255, 0, 0)',
+            data: [30, 29, 28, 25, 22, 23],
+        },
+        {
+            
+            label: 'Umidade média',
+            backgroundColor: 'rgb(0, 0, 255)',
+            borderColor: 'rgb(0, 0, 255)',
+            data: [80, 82, 80, 85, 80, 83]
+        }
+       
+    ]
+    };
+
+  
+    const config_barra = {
+        type: 'bar',
+        data: data_barra,
+        options: {}
+};
+
+</script>
+<script>
+    const myChart_linha = new Chart(
+        document.getElementById('myChart_linha'),
+        config_linha
+    );
+
+    const myChart_barra = new Chart(
+        document.getElementById('myChart_barra'),
+        config_barra
+    );
+
+</script>
+
+</html>
